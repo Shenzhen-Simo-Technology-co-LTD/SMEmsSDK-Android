@@ -1,5 +1,13 @@
 # SMEmsSDK-Android
 
+## VersionLog
+
+|version|log|
+|:-:|:-:|
+|1.0.1| Fixed EMS Device's remain exercise second error.|
+|1.0.0|First version|
+
+
 ## Installation
 
 ### From Github
@@ -21,12 +29,12 @@ allprojects {
 
 ### Step2:
 
-Add `implementation 'com.simo:SMEmsSDK:1.0.0'` into build.gradle(Module) dependencies scope:
+Add `implementation 'com.simo:SMEmsSDK:1.0.1'` into build.gradle(Module) dependencies scope:
 
 ```gradle
 dependencies {
 	...
-	implementation 'com.simo:SMEmsSDK:1.0.0'
+	implementation 'com.simo:SMEmsSDK:1.0.1'
 	...
 }
 ```
@@ -40,12 +48,12 @@ And put it into your project directory.
 
 #### Step2:
 
-Add `implementation(name:'SMEmsSDK-1.0.0', ext:'aar')` into build.gradle(Module) dependencies scope:
+Add `implementation(name:'SMEmsSDK-1.0.1', ext:'aar')` into build.gradle(Module) dependencies scope:
 
 ```gradle
 dependencies {
 	...
-	implementation(name:'SMEmsSDK-1.0.0', ext:'aar')
+	implementation(name:'SMEmsSDK-1.0.1', ext:'aar')
 	...
 }
 ```
