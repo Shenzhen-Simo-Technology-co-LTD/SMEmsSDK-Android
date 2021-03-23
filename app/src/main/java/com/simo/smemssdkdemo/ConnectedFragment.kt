@@ -472,7 +472,7 @@ class ConnectedFragment : BaseFragment(), SMEmsManagerDelegate {
             }
         }
 
-        binding?.intensitySlider?.value = maxIntensity.toFloat()
+        binding?.intensitySlider?.valueTo = maxIntensity.toFloat()
         binding?.intensitySlider?.value = toValue.toFloat()
 
         currentIntensity = toValue

@@ -1,6 +1,7 @@
 plugins {
     id 'com.android.application'
     id 'kotlin-android'
+    id 'kotlin-parcelize'
     id 'kotlin-kapt'
 }
 
@@ -46,11 +47,12 @@ android {
 //    dataBinding {
 //        enabled = true
 //    }
+
     repositories {
         flatDir {
             dirs 'libs'
         }
-        maven { url "https://raw.githubusercontent.com/Shenzhen-Simo-Technology-co-LTD/SMEmsSDK-Android/master" }
+        maven { url "https://raw.githubusercontent.com/Shenzhen-Simo-Technology-co-LTD/SMEmsSDK-Android/main" }
     }
 }
 

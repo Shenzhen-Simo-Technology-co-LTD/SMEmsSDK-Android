@@ -56,5 +56,40 @@
       <option name="name" value="maven" />
       <option name="url" value="https://raw.githubusercontent.com/Shenzhen-Simo-Technology-co-LTD/SMEmsSDK-Android/master" />
     </remote-repository>
+    <remote-repository>
+      <option name="id" value="maven" />
+      <option name="name" value="maven" />
+      <option name="url" value="https://raw.githubusercontent.com/Shenzhen-Simo-Technology-co-LTD/SMEmsSDK/master" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="maven" />
+      <option name="name" value="maven" />
+      <option name="url" value="https://raw.githubusercontent.com/Shenzhen-Simo-Technology-co-LTD/SMEmsSDKDemo/master" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="maven" />
+      <option name="name" value="maven" />
+      <option name="url" value="https://raw.githubusercontent.com/Shenzhen-Simo-Technology-co-LTD/SMEmsSDKDemo-Android/master" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="maven" />
+      <option name="name" value="maven" />
+      <option name="url" value="https://raw.githubusercontent.com/Shenzhen-Simo-Technology-co-LTD/SMEmsSDKDemo/main" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="maven" />
+      <option name="name" value="maven" />
+      <option name="url" value="https://raw.githubusercontent.com/Shenzhen-Simo-Technology-co-LTD/SMEmsSDKDemo-Android/main" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="maven" />
+      <option name="name" value="maven" />
+      <option name="url" value="https://raw.githubusercontent.com/Shenzhen-Simo-Technology-co-LTD/SMEmsSDK/main" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="maven" />
+      <option name="name" value="maven" />
+      <option name="url" value="https://raw.githubusercontent.com/Shenzhen-Simo-Technology-co-LTD/SMEmsSDK-Android/main" />
+    </remote-repository>
   </component>
 </project>
