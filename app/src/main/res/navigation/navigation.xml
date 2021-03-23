@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.simo.smemssdkdemo.HomeFragment"
+        android:label="HomeFragment"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_homeFragment_to_scanFragment"
+            app:destination="@id/scanFragment"
+            app:popUpTo="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/scanFragment"
+        android:name="com.simo.smemssdkdemo.ScanFragment"
+        android:label="fragment_scan"
+        tools:layout="@layout/fragment_scan" >
+        <action
+            android:id="@+id/action_scanFragment_to_connectedFragment"
+            app:destination="@id/connectedFragment"
+            app:popUpTo="@id/scanFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/connectedFragment"
+        android:name="com.simo.smemssdkdemo.ConnectedFragment"
+        android:label="ConnectedFragment"
+        tools:layout="@layout/fragment_connected"/>
+
+</navigation>

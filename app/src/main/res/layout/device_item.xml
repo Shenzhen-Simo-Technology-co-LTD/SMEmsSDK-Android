@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="model"
+            type="com.simo.smemssdk.SMEmsDeviceModel" />
+
+        <variable
+            name="listener"
+            type="com.simo.smemssdkdemo.DeviceItemListener" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="@{() -> listener.onClick(model)}">
+
+        <ImageView
+            android:id="@+id/wifi_image_view"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="21dp"
+            app:wifiLevelImage="@{model.rssiLevel}"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:srcCompat="@drawable/wifi_3" />
+
+        <TextView
+            android:id="@+id/name_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="21dp"
+            android:text="@{model.name}"
+            android:textAlignment="viewStart"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toTopOf="@+id/sn_text_view"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/wifi_image_view"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="我的发热装置" />
+
+        <TextView
+            android:id="@+id/sn_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{model.snCodeDisplay}"
+            android:textAlignment="viewStart"
+            android:textColor="#A1A1A1"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/name_text_view"
+            app:layout_constraintTop_toBottomOf="@+id/name_text_view"
+            tools:text="SN:Warm200000001" />
+
+        <View
+            android:id="@+id/separate_view"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@android:color/darker_gray"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

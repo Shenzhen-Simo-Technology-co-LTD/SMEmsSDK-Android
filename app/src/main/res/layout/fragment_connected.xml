@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/title_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="DEVICE INFOMATION:"/>
+
+        <TextView
+            android:id="@+id/device_info_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="- -"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ACTION API"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Intensity:"/>
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/exercise_mode_tab"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/aerobic_tab_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="有氧"
+                />
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/muscle_tab_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="增肌"/>
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/massage_tab_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="按摩"/>
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/ext_tab_item1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="扩1"/>
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/ext_tab_item2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="扩2"/>
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/ext_tab_item3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="扩3"/>
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/ext_tab_item4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="扩4"/>
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/ext_tab_item5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="扩5"/>
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/ext_tab_item6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="扩6"/>
+        </com.google.android.material.tabs.TabLayout>
+
+        <com.google.android.material.slider.Slider
+            android:id="@+id/intensity_slider"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="32dp"
+            android:valueFrom="1"
+            android:valueTo="32"
+            android:stepSize="1"
+            app:labelBehavior="withinBounds"
+            tools:value="16"
+            />
+
+        <TextView
+            android:id="@+id/progress_value_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:textAlignment="center"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:paddingHorizontal="32dp"
+            >
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/minus_sec_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                app:icon="@android:drawable/ic_media_rew"
+                app:iconPadding="0dp"
+                app:iconTint="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/remain_sec_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:text="00:00"
+                android:textAlignment="center"
+                android:textSize="26sp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/add_sec_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                app:icon="@android:drawable/ic_media_ff"
+                app:iconPadding="0dp"
+                app:iconTint="#FFFFFF" />
+
+        </LinearLayout>
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/run_mode_tab"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/start_tab_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="开始/继续"/>
+
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/pause_tab_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="暂停"/>
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/stop_tab_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="停止"/>
+
+        </com.google.android.material.tabs.TabLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="32dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="有氧模式开关"/>
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+            <com.google.android.material.switchmaterial.SwitchMaterial
+                android:id="@+id/aerobic_switch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:checked="true"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="32dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="增肌模式开关"/>
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+            <com.google.android.material.switchmaterial.SwitchMaterial
+                android:id="@+id/muscle_switch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:checked="true"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="32dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="按摩模式开关"/>
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+            <com.google.android.material.switchmaterial.SwitchMaterial
+                android:id="@+id/massage_switch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:checked="true"
+                />
+        </LinearLayout>
+    </LinearLayout>
+</layout>

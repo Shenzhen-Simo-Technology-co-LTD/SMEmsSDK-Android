@@ -1,0 +1,3 @@
+include ':SMEmsSDK'
+include ':app'
+rootProject.name = "SMEmsSDKDemo"
