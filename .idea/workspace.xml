@@ -10,13 +10,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cd1ca75d-d0fe-4b1f-a4d9-8cb96b62e5dc" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/md5-checksums.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/com/simo/SMEmsSDK/1.0.1/SMEmsSDK-1.0.1.aar" beforeDir="false" afterPath="$PROJECT_DIR$/com/simo/SMEmsSDK/1.0.1/SMEmsSDK-1.0.1.aar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/com/simo/SMEmsSDK/1.0.1/SMEmsSDK-1.0.1.aar.md5" beforeDir="false" afterPath="$PROJECT_DIR$/com/simo/SMEmsSDK/1.0.1/SMEmsSDK-1.0.1.aar.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/com/simo/SMEmsSDK/1.0.1/SMEmsSDK-1.0.1.aar.sha1" beforeDir="false" afterPath="$PROJECT_DIR$/com/simo/SMEmsSDK/1.0.1/SMEmsSDK-1.0.1.aar.sha1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/com/simo/SMEmsSDK/maven-metadata.xml" beforeDir="false" afterPath="$PROJECT_DIR$/com/simo/SMEmsSDK/maven-metadata.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/com/simo/SMEmsSDK/maven-metadata.xml.md5" beforeDir="false" afterPath="$PROJECT_DIR$/com/simo/SMEmsSDK/maven-metadata.xml.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/com/simo/SMEmsSDK/maven-metadata.xml.sha1" beforeDir="false" afterPath="$PROJECT_DIR$/com/simo/SMEmsSDK/maven-metadata.xml.sha1" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,24 +46,6 @@
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="SMEmsSDKDemo" type="f1a62948:ProjectNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="SMEmsSDKDemo" type="f1a62948:ProjectNode" />
-                <item name="SMEmsSDK" type="2d1252cf:ModuleNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="SMEmsSDKDemo" type="f1a62948:ProjectNode" />
-                <item name="SMEmsSDK" type="2d1252cf:ModuleNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="SMEmsSDKDemo" type="f1a62948:ProjectNode" />
-                <item name="SMEmsSDK" type="2d1252cf:ModuleNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="upload" type="c8890929:TasksNode$1" />
               </path>
             </expand>
             <select />
@@ -267,13 +254,24 @@
     </state>
     <state x="590" y="-783" key="refactoring.ChangeSignatureDialog/0.23.1440.829/-210.-1177.1920.1177@-210.-1177.1920.1177" timestamp="1616401357718" />
     <state x="590" y="-783" key="refactoring.ChangeSignatureDialog/0.23.1440.831/-210.-1177.1920.1177@-210.-1177.1920.1177" timestamp="1616413764809" />
-    <state x="415" y="-913" width="894" height="677" key="search.everywhere.popup" timestamp="1616417912704">
+    <state x="415" y="-912" width="670" height="676" key="search.everywhere.popup" timestamp="1618370626518">
       <screen x="-210" y="-1177" width="1920" height="1177" />
     </state>
-    <state x="415" y="-912" width="670" height="676" key="search.everywhere.popup/0.23.1440.828/-210.-1177.1920.1177@-210.-1177.1920.1177" timestamp="1615801165875" />
+    <state x="415" y="-912" width="670" height="676" key="search.everywhere.popup/0.23.1440.828/-210.-1177.1920.1177@-210.-1177.1920.1177" timestamp="1618370626518" />
     <state x="469" y="209" width="670" height="476" key="search.everywhere.popup/0.23.1440.828/-210.-1177.1920.1177@0.23.1440.828" timestamp="1615947151177" />
     <state x="415" y="-913" width="894" height="677" key="search.everywhere.popup/0.23.1440.829/-210.-1177.1920.1177@-210.-1177.1920.1177" timestamp="1616411033194" />
     <state x="415" y="-913" width="894" height="677" key="search.everywhere.popup/0.23.1440.830/-210.-1177.1920.1177@-210.-1177.1920.1177" timestamp="1616403234627" />
     <state x="415" y="-913" width="894" height="677" key="search.everywhere.popup/0.23.1440.831/-210.-1177.1920.1177@-210.-1177.1920.1177" timestamp="1616417912704" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/simo/smemssdkdemo/ScanFragment.kt</url>
+          <line>168</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

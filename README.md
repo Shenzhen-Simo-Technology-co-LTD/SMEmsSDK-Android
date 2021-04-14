@@ -4,6 +4,7 @@
 
 |version|log|
 |:-:|:-:|
+|1.0.2| Fixed SN missing last 2 chars.|
 |1.0.1| Fixed EMS Device's remain exercise second error.|
 |1.0.0|First version|
 

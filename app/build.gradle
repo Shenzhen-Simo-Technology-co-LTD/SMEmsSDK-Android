@@ -92,7 +92,7 @@ dependencies {
 //    implementation(name:'SMEmsSDK-1.0.0', ext:'aar')
 //    implementation `com.grayland:mysdk:1.0.0`
     // Remote Lib
-    implementation 'com.simo:SMEmsSDK:1.0.1'
+    implementation 'com.simo:SMEmsSDK:1.0.2'
 
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
