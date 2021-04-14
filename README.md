@@ -30,12 +30,12 @@ allprojects {
 
 ### Step2:
 
-Add `implementation 'com.simo:SMEmsSDK:1.0.1'` into build.gradle(Module) dependencies scope:
+Add `implementation 'com.simo:SMEmsSDK:1.0.2'` into build.gradle(Module) dependencies scope:
 
 ```gradle
 dependencies {
 	...
-	implementation 'com.simo:SMEmsSDK:1.0.1'
+	implementation 'com.simo:SMEmsSDK:1.0.2'
 	...
 }
 ```
@@ -49,12 +49,12 @@ And put it into your project directory.
 
 #### Step2:
 
-Add `implementation(name:'SMEmsSDK-1.0.1', ext:'aar')` into build.gradle(Module) dependencies scope:
+Add `implementation(name:'SMEmsSDK-1.0.2', ext:'aar')` into build.gradle(Module) dependencies scope:
 
 ```gradle
 dependencies {
 	...
-	implementation(name:'SMEmsSDK-1.0.1', ext:'aar')
+	implementation(name:'SMEmsSDK-1.0.2', ext:'aar')
 	...
 }
 ```
