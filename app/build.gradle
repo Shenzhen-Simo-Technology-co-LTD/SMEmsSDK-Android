@@ -89,10 +89,13 @@ dependencies {
     // Local Lib
 //    implementation project(':SMEmsSDK')
     // Local AAR
-//    implementation(name:'SMEmsSDK-1.0.0', ext:'aar')
+//    implementation(name:'SMEmsSDK-1.0.3', ext:'aar')
+//        transitive = true
+//        downloadJavadoc = true
+//    }
 //    implementation `com.grayland:mysdk:1.0.0`
     // Remote Lib
-    implementation 'com.simo:SMEmsSDK:1.0.2'
+    implementation 'com.simo:SMEmsSDK:1.0.3'
 
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
