@@ -93,9 +93,9 @@ dependencies {
 //        transitive = true
 //        downloadJavadoc = true
 //    }
-//    implementation `com.grayland:mysdk:1.0.0`
+
     // Remote Lib
-    implementation 'com.simo:SMEmsSDK:1.0.3'
+    implementation 'com.simo:SMEmsSDK:1.0.4'
 
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'

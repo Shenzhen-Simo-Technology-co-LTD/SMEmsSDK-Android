@@ -10,40 +10,31 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cd1ca75d-d0fe-4b1f-a4d9-8cb96b62e5dc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle____app_libs_class_jar.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.5/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/fileHashes/resourceHashesCache.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.5/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/javaCompile/classAnalysis.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.5/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/javaCompile/jarAnalysis.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.5/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/javaCompile/javaCompile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.5/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/md5-checksums.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_simo_SMEmsSDK_1_0_2_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle___SMEmsSDK_1_0_2__aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle___SMEmsSDK_1_0_3__aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_simo_SMEmsSDK_1_0_3_aar.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules/app/SMEmsSDKDemo.app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/app/SMEmsSDKDemo.app.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/com/simo/SMEmsSDK/1.0.2/SMEmsSDK-1.0.2.aar" beforeDir="false" afterPath="$PROJECT_DIR$/com/simo/SMEmsSDK/1.0.2/SMEmsSDK-1.0.2.aar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/com/simo/SMEmsSDK/1.0.2/SMEmsSDK-1.0.2.aar.md5" beforeDir="false" afterPath="$PROJECT_DIR$/com/simo/SMEmsSDK/1.0.2/SMEmsSDK-1.0.2.aar.md5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/com/simo/SMEmsSDK/1.0.2/SMEmsSDK-1.0.2.aar.sha1" beforeDir="false" afterPath="$PROJECT_DIR$/com/simo/SMEmsSDK/1.0.2/SMEmsSDK-1.0.2.aar.sha1" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/com/simo/SMEmsSDK/maven-metadata.xml" beforeDir="false" afterPath="$PROJECT_DIR$/com/simo/SMEmsSDK/maven-metadata.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/com/simo/SMEmsSDK/maven-metadata.xml.md5" beforeDir="false" afterPath="$PROJECT_DIR$/com/simo/SMEmsSDK/maven-metadata.xml.md5" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/com/simo/SMEmsSDK/maven-metadata.xml.sha1" beforeDir="false" afterPath="$PROJECT_DIR$/com/simo/SMEmsSDK/maven-metadata.xml.sha1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[P7C0217C22023199]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[MQS0219926027411]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -201,85 +192,31 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="275" y="-850" key="#PSD" timestamp="1616467080261">
+    <state width="1876" height="358" key="GridCell.Tab.0.bottom" timestamp="1624438947346">
       <screen x="-210" y="-1177" width="1920" height="1177" />
     </state>
-    <state x="275" y="-850" key="#PSD/0.23.1440.831/-210.-1177.1920.1177@-210.-1177.1920.1177" timestamp="1616467080261" />
-    <state x="529" y="-866" key="#com.intellij.ide.util.MemberChooser" timestamp="1616415664148">
+    <state width="1876" height="358" key="GridCell.Tab.0.bottom/0.23.1440.828/-210.-1177.1920.1177@-210.-1177.1920.1177" timestamp="1624438947346" />
+    <state width="1876" height="358" key="GridCell.Tab.0.center" timestamp="1624438947344">
       <screen x="-210" y="-1177" width="1920" height="1177" />
     </state>
-    <state x="529" y="-866" key="#com.intellij.ide.util.MemberChooser/0.23.1440.828/-210.-1177.1920.1177@-210.-1177.1920.1177" timestamp="1615802694718" />
-    <state x="529" y="-866" key="#com.intellij.ide.util.MemberChooser/0.23.1440.829/-210.-1177.1920.1177@-210.-1177.1920.1177" timestamp="1616411165283" />
-    <state x="529" y="-866" key="#com.intellij.ide.util.MemberChooser/0.23.1440.831/-210.-1177.1920.1177@-210.-1177.1920.1177" timestamp="1616415664148" />
-    <state x="835" y="-786" width="840" height="597" key="#xdebugger.evaluate" timestamp="1616417532697">
+    <state width="1876" height="358" key="GridCell.Tab.0.center/0.23.1440.828/-210.-1177.1920.1177@-210.-1177.1920.1177" timestamp="1624438947344" />
+    <state width="1876" height="358" key="GridCell.Tab.0.left" timestamp="1624438947343">
       <screen x="-210" y="-1177" width="1920" height="1177" />
     </state>
-    <state x="835" y="-786" width="840" height="597" key="#xdebugger.evaluate/0.23.1440.831/-210.-1177.1920.1177@-210.-1177.1920.1177" timestamp="1616417532697" />
-    <state x="338" y="-827" key="AndroidCreateResourceFileDialog" timestamp="1615793540801">
+    <state width="1876" height="358" key="GridCell.Tab.0.left/0.23.1440.828/-210.-1177.1920.1177@-210.-1177.1920.1177" timestamp="1624438947343" />
+    <state width="1876" height="358" key="GridCell.Tab.0.right" timestamp="1624438947345">
       <screen x="-210" y="-1177" width="1920" height="1177" />
     </state>
-    <state x="338" y="-827" key="AndroidCreateResourceFileDialog/0.23.1440.828/-210.-1177.1920.1177@-210.-1177.1920.1177" timestamp="1615793540801" />
-    <state x="572" y="-804" key="AndroidCreateXmlResourceDialog" timestamp="1615772879644">
-      <screen x="-210" y="-1177" width="1920" height="1177" />
-    </state>
-    <state x="572" y="-804" key="AndroidCreateXmlResourceDialog/0.23.1440.828/-210.-1177.1920.1177@-210.-1177.1920.1177" timestamp="1615772879644" />
-    <state width="1876" height="405" key="GridCell.Tab.0.bottom" timestamp="1624343747403">
-      <screen x="-210" y="-1177" width="1920" height="1177" />
-    </state>
-    <state width="1876" height="405" key="GridCell.Tab.0.bottom/0.23.1440.828/-210.-1177.1920.1177@-210.-1177.1920.1177" timestamp="1624343747403" />
-    <state width="1876" height="359" key="GridCell.Tab.0.bottom/0.23.1440.831/-210.-1177.1920.1177@-210.-1177.1920.1177" timestamp="1616419659467" />
-    <state width="1876" height="405" key="GridCell.Tab.0.center" timestamp="1624343747401">
-      <screen x="-210" y="-1177" width="1920" height="1177" />
-    </state>
-    <state width="1876" height="405" key="GridCell.Tab.0.center/0.23.1440.828/-210.-1177.1920.1177@-210.-1177.1920.1177" timestamp="1624343747401" />
-    <state width="1876" height="359" key="GridCell.Tab.0.center/0.23.1440.831/-210.-1177.1920.1177@-210.-1177.1920.1177" timestamp="1616419659467" />
-    <state width="1876" height="405" key="GridCell.Tab.0.left" timestamp="1624343747401">
-      <screen x="-210" y="-1177" width="1920" height="1177" />
-    </state>
-    <state width="1876" height="405" key="GridCell.Tab.0.left/0.23.1440.828/-210.-1177.1920.1177@-210.-1177.1920.1177" timestamp="1624343747401" />
-    <state width="1876" height="359" key="GridCell.Tab.0.left/0.23.1440.831/-210.-1177.1920.1177@-210.-1177.1920.1177" timestamp="1616419659467" />
-    <state width="1876" height="405" key="GridCell.Tab.0.right" timestamp="1624343747402">
-      <screen x="-210" y="-1177" width="1920" height="1177" />
-    </state>
-    <state width="1876" height="405" key="GridCell.Tab.0.right/0.23.1440.828/-210.-1177.1920.1177@-210.-1177.1920.1177" timestamp="1624343747402" />
-    <state width="1876" height="359" key="GridCell.Tab.0.right/0.23.1440.831/-210.-1177.1920.1177@-210.-1177.1920.1177" timestamp="1616419659467" />
+    <state width="1876" height="358" key="GridCell.Tab.0.right/0.23.1440.828/-210.-1177.1920.1177@-210.-1177.1920.1177" timestamp="1624438947345" />
     <state x="480" y="-850" width="576" height="524" key="StructurePopup" timestamp="1624342090574">
       <screen x="-210" y="-1177" width="1920" height="1177" />
     </state>
     <state x="480" y="-850" width="576" height="524" key="StructurePopup/0.23.1440.828/-210.-1177.1920.1177@-210.-1177.1920.1177" timestamp="1624342090574" />
-    <state x="518" y="253" width="576" height="369" key="StructurePopup/0.23.1440.828/-210.-1177.1920.1177@0.23.1440.828" timestamp="1615946182374" />
-    <state x="480" y="-850" width="576" height="524" key="StructurePopup/0.23.1440.829/-210.-1177.1920.1177@-210.-1177.1920.1177" timestamp="1616410533669" />
-    <state x="480" y="-850" width="576" height="524" key="StructurePopup/0.23.1440.831/-210.-1177.1920.1177@-210.-1177.1920.1177" timestamp="1616419115646" />
-    <state width="505" height="476" key="SwitcherDM" timestamp="1616413709327">
-      <screen x="-210" y="-1177" width="1920" height="1177" />
-    </state>
-    <state width="505" height="476" key="SwitcherDM/0.23.1440.828/-210.-1177.1920.1177@-210.-1177.1920.1177" timestamp="1616398402919" />
-    <state width="505" height="476" key="SwitcherDM/0.23.1440.829/-210.-1177.1920.1177@-210.-1177.1920.1177" timestamp="1616399770167" />
-    <state width="505" height="476" key="SwitcherDM/0.23.1440.831/-210.-1177.1920.1177@-210.-1177.1920.1177" timestamp="1616413709327" />
-    <state x="405" y="-967" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1616418161176">
-      <screen x="-210" y="-1177" width="1920" height="1177" />
-    </state>
-    <state x="405" y="-967" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.23.1440.831/-210.-1177.1920.1177@-210.-1177.1920.1177" timestamp="1616418161176" />
-    <state x="442" y="-834" width="928" height="697" key="find.popup" timestamp="1616418771081">
-      <screen x="-210" y="-1177" width="1920" height="1177" />
-    </state>
-    <state x="442" y="-834" width="927" height="548" key="find.popup/0.23.1440.828/-210.-1177.1920.1177@-210.-1177.1920.1177" timestamp="1615804260598" />
-    <state x="489" y="264" width="696" height="490" key="find.popup/0.23.1440.828/-210.-1177.1920.1177@0.23.1440.828" timestamp="1615971666411" />
-    <state x="442" y="-834" width="928" height="697" key="find.popup/0.23.1440.829/-210.-1177.1920.1177@-210.-1177.1920.1177" timestamp="1616400625687" />
-    <state x="442" y="-834" width="928" height="697" key="find.popup/0.23.1440.831/-210.-1177.1920.1177@-210.-1177.1920.1177" timestamp="1616418771081" />
-    <state x="590" y="-783" key="refactoring.ChangeSignatureDialog" timestamp="1616413764809">
-      <screen x="-210" y="-1177" width="1920" height="1177" />
-    </state>
-    <state x="590" y="-783" key="refactoring.ChangeSignatureDialog/0.23.1440.829/-210.-1177.1920.1177@-210.-1177.1920.1177" timestamp="1616401357718" />
-    <state x="590" y="-783" key="refactoring.ChangeSignatureDialog/0.23.1440.831/-210.-1177.1920.1177@-210.-1177.1920.1177" timestamp="1616413764809" />
-    <state x="415" y="-912" width="670" height="676" key="search.everywhere.popup" timestamp="1624273092424">
-      <screen x="-210" y="-1177" width="1920" height="1177" />
+    <state x="415" y="-910" width="670" height="675" key="search.everywhere.popup" timestamp="1629947883066">
+      <screen x="-210" y="-1175" width="1920" height="1175" />
     </state>
     <state x="415" y="-912" width="670" height="676" key="search.everywhere.popup/0.23.1440.828/-210.-1177.1920.1177@-210.-1177.1920.1177" timestamp="1624273092424" />
-    <state x="469" y="209" width="670" height="476" key="search.everywhere.popup/0.23.1440.828/-210.-1177.1920.1177@0.23.1440.828" timestamp="1615947151177" />
-    <state x="415" y="-913" width="894" height="677" key="search.everywhere.popup/0.23.1440.829/-210.-1177.1920.1177@-210.-1177.1920.1177" timestamp="1616411033194" />
-    <state x="415" y="-913" width="894" height="677" key="search.everywhere.popup/0.23.1440.830/-210.-1177.1920.1177@-210.-1177.1920.1177" timestamp="1616403234627" />
-    <state x="415" y="-913" width="894" height="677" key="search.everywhere.popup/0.23.1440.831/-210.-1177.1920.1177@-210.-1177.1920.1177" timestamp="1616417912704" />
+    <state x="415" y="-910" width="670" height="675" key="search.everywhere.popup/0.25.1680.975/-210.-1175.1920.1175@-210.-1175.1920.1175" timestamp="1629947883066" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
