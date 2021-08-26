@@ -41,9 +41,19 @@ class ScanFragment : BaseFragment(), SMEmsManagerDelegate {
         setupViews()
     }
 
+    var testScanAndAutoReconnect = false
+    var lastSN: String? = null
     override fun onResume() {
         super.onResume()
-        startSearchingDevice()
+//        if (SMEmsManager.defaultManager.isEnableAutoReconnect && lastSN?.isNotEmpty() == true) {
+//            Timber.e("开启的自动重连, 不用操作")
+//        }else
+        if (testScanAndAutoReconnect && lastSN?.isNotEmpty() == true){
+            Timber.e("测试扫描连接")
+            SMEmsManager.defaultManager.scanAndConnectDevice(lastSN!!, timeout = 15.0)
+        }else {
+            startSearchingDevice()
+        }
     }
 
     private fun setupViews() {
@@ -99,6 +109,10 @@ class ScanFragment : BaseFragment(), SMEmsManagerDelegate {
         SMEmsManager.defaultManager.stopScan()
         Timber.i("didSelectDevice ${heaterModel.name}\nSN:${heaterModel.snCodeDisplay}")
         showLoadingHUD("Connecting...")
+        Timber.e("开始连接设备")
+        SMEmsManager.defaultManager.isEnableAutoReconnect = true
+//        testScanAndAutoReconnect = true
+        lastSN = heaterModel.snCode
         SMEmsManager.defaultManager.connectDevice(heaterModel.device!!)
     }
 

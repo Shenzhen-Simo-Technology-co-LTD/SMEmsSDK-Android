@@ -10,6 +10,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cd1ca75d-d0fe-4b1f-a4d9-8cb96b62e5dc" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_simo_SMEmsSDK_1_0_4_aar.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.bin" afterDir="false" />
@@ -17,17 +18,14 @@
       <change beforePath="$PROJECT_DIR$/.gradle/6.5/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/javaCompile/javaCompile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.5/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/md5-checksums.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle___SMEmsSDK_1_0_3__aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_simo_SMEmsSDK_1_0_3_aar.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules/app/SMEmsSDKDemo.app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/app/SMEmsSDKDemo.app.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/com/simo/SMEmsSDK/maven-metadata.xml" beforeDir="false" afterPath="$PROJECT_DIR$/com/simo/SMEmsSDK/maven-metadata.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/com/simo/SMEmsSDK/maven-metadata.xml.md5" beforeDir="false" afterPath="$PROJECT_DIR$/com/simo/SMEmsSDK/maven-metadata.xml.md5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/com/simo/SMEmsSDK/maven-metadata.xml.sha1" beforeDir="false" afterPath="$PROJECT_DIR$/com/simo/SMEmsSDK/maven-metadata.xml.sha1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/simo/smemssdkdemo/ScanFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/simo/smemssdkdemo/ScanFragment.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -192,38 +190,47 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1876" height="358" key="GridCell.Tab.0.bottom" timestamp="1624438947346">
-      <screen x="-210" y="-1177" width="1920" height="1177" />
+    <state width="1876" height="287" key="GridCell.Tab.0.bottom" timestamp="1629947927275">
+      <screen x="-210" y="-1175" width="1920" height="1175" />
     </state>
     <state width="1876" height="358" key="GridCell.Tab.0.bottom/0.23.1440.828/-210.-1177.1920.1177@-210.-1177.1920.1177" timestamp="1624438947346" />
-    <state width="1876" height="358" key="GridCell.Tab.0.center" timestamp="1624438947344">
-      <screen x="-210" y="-1177" width="1920" height="1177" />
+    <state width="1876" height="287" key="GridCell.Tab.0.bottom/0.25.1680.975/-210.-1175.1920.1175@-210.-1175.1920.1175" timestamp="1629947927275" />
+    <state width="1876" height="287" key="GridCell.Tab.0.center" timestamp="1629947927273">
+      <screen x="-210" y="-1175" width="1920" height="1175" />
     </state>
     <state width="1876" height="358" key="GridCell.Tab.0.center/0.23.1440.828/-210.-1177.1920.1177@-210.-1177.1920.1177" timestamp="1624438947344" />
-    <state width="1876" height="358" key="GridCell.Tab.0.left" timestamp="1624438947343">
-      <screen x="-210" y="-1177" width="1920" height="1177" />
+    <state width="1876" height="287" key="GridCell.Tab.0.center/0.25.1680.975/-210.-1175.1920.1175@-210.-1175.1920.1175" timestamp="1629947927273" />
+    <state width="1876" height="287" key="GridCell.Tab.0.left" timestamp="1629947927272">
+      <screen x="-210" y="-1175" width="1920" height="1175" />
     </state>
     <state width="1876" height="358" key="GridCell.Tab.0.left/0.23.1440.828/-210.-1177.1920.1177@-210.-1177.1920.1177" timestamp="1624438947343" />
-    <state width="1876" height="358" key="GridCell.Tab.0.right" timestamp="1624438947345">
-      <screen x="-210" y="-1177" width="1920" height="1177" />
+    <state width="1876" height="287" key="GridCell.Tab.0.left/0.25.1680.975/-210.-1175.1920.1175@-210.-1175.1920.1175" timestamp="1629947927272" />
+    <state width="1876" height="287" key="GridCell.Tab.0.right" timestamp="1629947927274">
+      <screen x="-210" y="-1175" width="1920" height="1175" />
     </state>
     <state width="1876" height="358" key="GridCell.Tab.0.right/0.23.1440.828/-210.-1177.1920.1177@-210.-1177.1920.1177" timestamp="1624438947345" />
-    <state x="480" y="-850" width="576" height="524" key="StructurePopup" timestamp="1624342090574">
-      <screen x="-210" y="-1177" width="1920" height="1177" />
+    <state width="1876" height="287" key="GridCell.Tab.0.right/0.25.1680.975/-210.-1175.1920.1175@-210.-1175.1920.1175" timestamp="1629947927274" />
+    <state x="480" y="-849" width="576" height="524" key="StructurePopup" timestamp="1629948531225">
+      <screen x="-210" y="-1175" width="1920" height="1175" />
     </state>
     <state x="480" y="-850" width="576" height="524" key="StructurePopup/0.23.1440.828/-210.-1177.1920.1177@-210.-1177.1920.1177" timestamp="1624342090574" />
-    <state x="415" y="-910" width="670" height="675" key="search.everywhere.popup" timestamp="1629947883066">
+    <state x="480" y="-849" width="576" height="524" key="StructurePopup/0.25.1680.975/-210.-1175.1920.1175@-210.-1175.1920.1175" timestamp="1629948531225" />
+    <state x="469" y="-833" width="746" height="490" key="find.popup" timestamp="1629947957961">
+      <screen x="-210" y="-1175" width="1920" height="1175" />
+    </state>
+    <state x="469" y="-833" width="746" height="490" key="find.popup/0.25.1680.975/-210.-1175.1920.1175@-210.-1175.1920.1175" timestamp="1629947957961" />
+    <state x="415" y="-910" width="670" height="675" key="search.everywhere.popup" timestamp="1629948446041">
       <screen x="-210" y="-1175" width="1920" height="1175" />
     </state>
     <state x="415" y="-912" width="670" height="676" key="search.everywhere.popup/0.23.1440.828/-210.-1177.1920.1177@-210.-1177.1920.1177" timestamp="1624273092424" />
-    <state x="415" y="-910" width="670" height="675" key="search.everywhere.popup/0.25.1680.975/-210.-1175.1920.1175@-210.-1175.1920.1175" timestamp="1629947883066" />
+    <state x="415" y="-910" width="670" height="675" key="search.everywhere.popup/0.25.1680.975/-210.-1175.1920.1175@-210.-1175.1920.1175" timestamp="1629948446041" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="kotlin-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/simo/smemssdkdemo/ScanFragment.kt</url>
-          <line>132</line>
+          <line>146</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
