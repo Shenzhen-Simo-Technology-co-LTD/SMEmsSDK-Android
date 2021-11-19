@@ -623,9 +623,13 @@ class ConnectedFragment : BaseFragment(), SMEmsManagerDelegate {
     }
 
     suspend fun startOTA() {
-        showLoadingHUD("准备升级")
         val binData = loadDFUFile()
-
+        if (binData == null) {
+            showMessageHUD("升级包不存在或加载失败")
+            return
+        }
+        
+        showLoadingHUD("准备升级")
         SMEmsManager.defaultManager.currentDevice?.startOTA(binData,
             { errorDesc ->
                 MainScope().async {

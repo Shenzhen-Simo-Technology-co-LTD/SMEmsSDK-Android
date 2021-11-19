@@ -4,6 +4,7 @@
 
 |version|log|
 |:-:|:-:|
+|1.1.0| Add OTA and presetConfig API|
 |1.0.4| Fixed SN comparing in scanAndConnectDevice missing last 2chars, and fixed timeout param not apply.|
 |1.0.3| Delay 1600ms to call discoverService after BLE be connected.|
 |1.0.2| Fixed SN missing last 2 chars.|
@@ -32,12 +33,12 @@ allprojects {
 
 ### Step2:
 
-Add `implementation 'com.simo:SMEmsSDK:1.0.4'` into build.gradle(Module) dependencies scope:
+Add `implementation 'com.simo:SMEmsSDK:1.1.0'` into build.gradle(Module) dependencies scope:
 
 ```gradle
 dependencies {
 	...
-	implementation 'com.simo:SMEmsSDK:1.0.4'
+	implementation 'com.simo:SMEmsSDK:1.1.0'
 	...
 }
 ```
@@ -51,12 +52,12 @@ And put it into your project directory.
 
 #### Step2:
 
-Add `implementation(name:'SMEmsSDK-1.0.4', ext:'aar')` into build.gradle(Module) dependencies scope:
+Add `implementation(name:'SMEmsSDK-1.1.0', ext:'aar')` into build.gradle(Module) dependencies scope:
 
 ```gradle
 dependencies {
 	...
-	implementation(name:'SMEmsSDK-1.0.4', ext:'aar')
+	implementation(name:'SMEmsSDK-1.1.0', ext:'aar')
 	...
 }
 ```

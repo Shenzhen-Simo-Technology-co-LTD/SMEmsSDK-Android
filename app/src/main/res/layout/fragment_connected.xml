@@ -22,7 +22,9 @@
             android:id="@+id/device_info_label"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="- -"/>
+            android:textSize="8sp"
+            android:text="- -"
+            tools:text="SN:\n固件版本:\n硬件版本:"/>
 
         <TextView
             android:layout_width="match_parent"
@@ -164,7 +166,11 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="停止"/>
-
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/only_start_tab_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="开始"/>
         </com.google.android.material.tabs.TabLayout>
 
         <LinearLayout
@@ -224,5 +230,35 @@
                 tools:checked="true"
                 />
         </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="设置预设配置(0~7):"
+                />
+            <EditText
+                android:id="@+id/config_text"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:inputType="number" />
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/config_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="设置"
+                android:enabled="false"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/ota_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OTA升级"
+            android:layout_gravity="center"/>
     </LinearLayout>
 </layout>
