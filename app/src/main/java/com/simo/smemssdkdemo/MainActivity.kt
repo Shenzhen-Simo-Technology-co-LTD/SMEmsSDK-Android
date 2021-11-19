@@ -6,7 +6,11 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.core.content.ContextCompat
 import com.simo.smemssdk.SMEmsManager
+import kotlinx.coroutines.MainScope
+import kotlinx.coroutines.async
+import kotlinx.coroutines.delay
 import timber.log.Timber
+import java.io.InputStream
 
 const val REQUEST_ENABLE_BT = 1
 
@@ -20,6 +24,7 @@ class MainActivity : AppCompatActivity() {
         SMEmsManager.defaultManager.autoRequestBLEPermission()
         Timber.w("BLE : ${SMEmsManager.defaultManager.isBLEEnable}")
     }
+
 
     fun requestPermissions() {
 //            Timber.d("setupPermissions")

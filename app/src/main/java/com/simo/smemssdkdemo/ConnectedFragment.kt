@@ -1,26 +1,36 @@
 package com.simo.smemssdkdemo
 
+import android.annotation.SuppressLint
 import android.os.Bundle
 import android.os.CountDownTimer
+import android.text.SpannableStringBuilder
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.CompoundButton
 import androidx.databinding.DataBindingUtil
+import androidx.navigation.fragment.findNavController
 import com.google.android.material.slider.Slider
 import com.google.android.material.tabs.TabItem
 import com.google.android.material.tabs.TabLayout
 import com.simo.smemssdk.*
 import com.simo.smemssdkdemo.databinding.FragmentConnectedBinding
+import kotlinx.coroutines.MainScope
+import kotlinx.coroutines.async
+import kotlinx.coroutines.delay
 import timber.log.Timber
+import java.util.*
 import kotlin.math.floor
 
 /**
  * Created by GrayLand119
  * on 2021/3/15
  */
+@ExperimentalUnsignedTypes
 class ConnectedFragment : BaseFragment(), SMEmsManagerDelegate {
+
+    var binding: FragmentConnectedBinding? = null
 
     var enabledExerciseModes: MutableList<SMDeviceExerciseMode> = mutableListOf()
     var maxIntensity = 32
@@ -94,8 +104,6 @@ class ConnectedFragment : BaseFragment(), SMEmsManagerDelegate {
 
     private var _cdTimer: CountDownTimer? = null
 
-    var binding: FragmentConnectedBinding? = null
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         SMEmsManager.defaultManager.addDelegate(this)
@@ -111,6 +119,13 @@ class ConnectedFragment : BaseFragment(), SMEmsManagerDelegate {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+        SMEmsManager.defaultManager.currentDevice?.let {
+            binding!!.configBtn.isEnabled = it.isConnected && it.fwVersion > 1.7
+            if (it.presetConfigIndex >= 0) {
+                binding!!.configText.text = SpannableStringBuilder(it.presetConfigIndex.toString())
+            }
+        }
 
         binding?.intensitySlider?.addOnSliderTouchListener(object : Slider.OnSliderTouchListener {
             override fun onStartTrackingTouch(slider: Slider) {
@@ -161,6 +176,17 @@ class ConnectedFragment : BaseFragment(), SMEmsManagerDelegate {
             }
         }
 
+        binding?.configBtn?.setOnClickListener {
+            val configIndex = binding?.configText?.text.toString().toIntOrNull() ?: 0
+            if (configIndex > 7 || configIndex < 0) {
+                binding!!.configText.text = SpannableStringBuilder(SMEmsManager.defaultManager.currentDevice?.presetConfigIndex.toString())
+                showMessageHUD("请输入正确的参数")
+                return@setOnClickListener
+            }
+            SMEmsManager.defaultManager.currentDevice?.setPresetConfig(configIndex)
+            showMessageHUD("设置成功")
+        }
+
         binding?.runModeTab?.addOnTabSelectedListener(object : TabLayout.OnTabSelectedListener {
 
             override fun onTabSelected(tab: TabLayout.Tab?) {
@@ -180,6 +206,10 @@ class ConnectedFragment : BaseFragment(), SMEmsManagerDelegate {
                         Timber.d("停止")
                         stoppWorking(true)
                     }
+                    3 -> {
+                        Timber.d("只发开始指令")
+                        startWorkingOnly(true)
+                    }
                     else -> {}
                 }
             }
@@ -190,6 +220,12 @@ class ConnectedFragment : BaseFragment(), SMEmsManagerDelegate {
             override fun onTabReselected(tab: TabLayout.Tab?) {
             }
         })
+
+        binding?.otaBtn?.setOnClickListener {
+            MainScope().async {
+                startOTA()
+            }
+        }
 
         /// Switch
         binding!!.aerobicSwitch.isChecked = true
@@ -254,8 +290,78 @@ class ConnectedFragment : BaseFragment(), SMEmsManagerDelegate {
 
         // 初始化模式, 默认都开启,  若没有设定则不需要初始化, 初始化会发送 3 条开启命令.
 //        updateEnbaleExerciseModes(false,  false)
-
     }
+
+    @SuppressLint("Assert")
+    private fun apiTest() {
+        MainScope().async {
+            val curDevice = SMEmsManager.defaultManager.currentDevice!!
+            curDevice.setVoltageConfig(0)
+            curDevice.readPresetConfig { isSuccessfully, errorCode, errorDesc, value ->
+                assert(value==0xF0) { "setVoltageConfig Error1! value:$value" }
+            }
+            delay(300)
+            curDevice.setVoltageConfig(7)
+            curDevice.readPresetConfig { isSuccessfully, errorCode, errorDesc, value ->
+                assert(value==0xF7) { "setVoltageConfig Error2! value:$value" }
+            }
+            delay(300)
+            curDevice.setPresetConfig(0)
+            curDevice.readPresetConfig { isSuccessfully, errorCode, errorDesc, value ->
+                assert(value==0x00) { "setPresetConfig Error1! value: $value" }
+            }
+            delay(300)
+            curDevice.setPresetConfig(7)
+            curDevice.readPresetConfig { isSuccessfully, errorCode, errorDesc, value ->
+                assert(value==0x07) { "setPresetConfig Error2! value:$value" }
+            }
+            delay(300)
+            curDevice.setMinPWConfig(10)
+            curDevice.readMinPWConfig { isSuccessfully, errorCode, errorDesc, value ->
+                assert(value==10) { "setMinPWConfig Error1! value:$value" }
+            }
+            delay(300)
+            curDevice.setMinPWConfig(250)
+            curDevice.readMinPWConfig { isSuccessfully, errorCode, errorDesc, value ->
+                assert(value==250) { "setMinPWConfig Error2! value:$value" }
+            }
+
+            delay(300)
+            curDevice.setMaxPWConfig(40)
+            curDevice.readMaxPWConfig { isSuccessfully, errorCode, errorDesc, value ->
+                assert(value==40) { "setMaxPWConfig Error1! value=$value" }
+            }
+            delay(300)
+            curDevice.setMaxPWConfig(300)
+            curDevice.readMaxPWConfig { isSuccessfully, errorCode, errorDesc, value ->
+                assert(value==300) { "setMaxPWConfig Error12 value:$value" }
+            }
+
+            delay(300)
+            curDevice.setAscPWConfig(2)
+            curDevice.readAscPWConfig { isSuccessfully, errorCode, errorDesc, value ->
+                assert(value==2) { "setAscPWConfig Error1! value:$value" }
+            }
+            delay(300)
+            curDevice.setAscPWConfig(250)
+            curDevice.readAscPWConfig { isSuccessfully, errorCode, errorDesc, value ->
+                assert(value==250) { "setAscPWConfig Error2! value:$value" }
+            }
+            delay(300)
+            curDevice.setNormalPWConfig(10)
+            curDevice.readNormalPWConfig { isSuccessfully, errorCode, errorDesc, value ->
+                assert(value==10) { "setNormalPWConfig Error2! value:$value" }
+            }
+            delay(300)
+            curDevice.setNormalPWConfig(300)
+            curDevice.readNormalPWConfig { isSuccessfully, errorCode, errorDesc, value ->
+                assert(value==300) { "setNormalPWConfig Error2! value:$value" }
+            }
+
+            BLELog.d("Run All Test Finished.")
+        }
+    }
+
     override fun onSaveInstanceState(outState: Bundle) {
         super.onSaveInstanceState(outState)
         SMEmsManager.defaultManager.removeDelegate(this)
@@ -263,6 +369,7 @@ class ConnectedFragment : BaseFragment(), SMEmsManagerDelegate {
 
     override fun onDestroy() {
         super.onDestroy()
+        Timber.e("手动断开连接")
         SMEmsManager.defaultManager.removeDelegate(this)
         SMEmsManager.defaultManager.disconnectCurrentDevice()
     }
@@ -369,12 +476,15 @@ class ConnectedFragment : BaseFragment(), SMEmsManagerDelegate {
         var infoDesc = ""
         infoDesc += "设备名称: %s \n".format(device.name)
         infoDesc += "设备SN: %s \n".format(device.sn)
+        infoDesc += "固件版本: %s \n".format(device.fwVersion.toString())
+        infoDesc += "硬件版本: %s \n".format(device.hwVersion.toString())
         infoDesc += "剩余电量: %s \n".format(device.battery.toString())
         infoDesc += "运行状态: %s \n".format(device.runMode.toString())
         infoDesc += "当前模式: %s \n".format(device.excerciseMode.toString())
         infoDesc += "当前模式信号强度: %s \n".format(device.intensity.toString())
         infoDesc += "充电状态: %s \n".format(device.chargeState.toString())
         infoDesc += "底座状态: %s \n".format(device.hubState.toString())
+        infoDesc += "预设配置: %s \n".format(device.presetConfigIndex.toString())
         infoDesc += "剩余运动时长(设备内计时器): %s \n".format(device.remainSeconds.toString())
 
         binding!!.deviceInfoLabel.text = infoDesc
@@ -424,6 +534,31 @@ class ConnectedFragment : BaseFragment(), SMEmsManagerDelegate {
         }
     }
 
+    fun startWorkingOnly(sendCmd: Boolean) {
+        currentRunMode = SMDeviceRunMode.working
+        _cdTimer?.cancel()
+        _cdTimer = null
+        _cdTimer = object: CountDownTimer(Long.MAX_VALUE, 1000L) {
+            override fun onTick(millisUntilFinished: Long) {
+//                Timber.i("CD Timer onTick")
+                exerciseSeconds -= 1
+                if (exerciseSeconds <= 0) {
+                    _cdTimer?.cancel()
+                    _cdTimer = null
+
+                    stoppWorking(sendCmd = true)
+                }
+            }
+            override fun onFinish() {
+            }
+        }
+        _cdTimer?.start()
+
+        if (sendCmd) {
+            // Set Mode Only
+            SMEmsManager.defaultManager.currentDevice?.setRunMode(SMDeviceRunMode.working, null)
+        }
+    }
     fun stoppWorking(sendCmd: Boolean) {
         currentRunMode = SMDeviceRunMode.stopped
 
@@ -485,6 +620,41 @@ class ConnectedFragment : BaseFragment(), SMEmsManagerDelegate {
             SMEmsManager.defaultManager.currentDevice?.setIntensity(currentIntensity, null)
             SMEmsManager.defaultManager.currentDevice?.intensity = currentIntensity.toInt()
         }
+    }
+
+    suspend fun startOTA() {
+        showLoadingHUD("准备升级")
+        val binData = loadDFUFile()
+
+        SMEmsManager.defaultManager.currentDevice?.startOTA(binData,
+            { errorDesc ->
+                MainScope().async {
+                    showMessageHUD(errorDesc!!)
+                }
+            }, { p ->
+                MainScope().async {
+                    val progress = floor(p!! * 100).toInt()
+                    Timber.d("ota progress:${progress}, p: ${p}")
+                    showProgressHUD(progress, "正在升级", "${progress}%")
+                }
+            },
+            {
+                MainScope().async {
+                    showMessageHUD("升级完成", 3000L)
+                    delay(3000L)
+                    SMEmsManager.defaultManager.disconnectCurrentDevice()
+                    findNavController().navigateUp()
+                }
+            }
+        )
+    }
+
+    fun loadDFUFile(): ByteArray {
+//        val dataS = requireContext().assets.open("EMS_HW1001_SW1500.smbin")
+        val dataS = requireContext().assets.open("EMS_HW1001_SW1704.smbin")
+        val rawData = dataS.readBytes()
+        Timber.i("Bin Data: ${rawData.size}")
+        return rawData
     }
 
     /** SMEmsManagerDelegate */

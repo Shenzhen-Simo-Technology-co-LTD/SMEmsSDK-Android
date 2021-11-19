@@ -17,6 +17,9 @@ import androidx.recyclerview.widget.RecyclerView
 import com.simo.smemssdk.*
 import com.simo.smemssdkdemo.databinding.DeviceItemBinding
 import com.simo.smemssdkdemo.databinding.FragmentScanBinding
+import kotlinx.coroutines.MainScope
+import kotlinx.coroutines.async
+import kotlinx.coroutines.delay
 import timber.log.Timber
 
 
@@ -48,6 +51,10 @@ class ScanFragment : BaseFragment(), SMEmsManagerDelegate {
 //        if (SMEmsManager.defaultManager.isEnableAutoReconnect && lastSN?.isNotEmpty() == true) {
 //            Timber.e("开启的自动重连, 不用操作")
 //        }else
+
+//        test()
+//        return
+
         if (testScanAndAutoReconnect && lastSN?.isNotEmpty() == true){
             Timber.e("测试扫描连接")
             SMEmsManager.defaultManager.scanAndConnectDevice(lastSN!!, timeout = 15.0)
@@ -56,9 +63,22 @@ class ScanFragment : BaseFragment(), SMEmsManagerDelegate {
         }
     }
 
+    fun test() {
+        MainScope().async {
+            showMessageHUD("正在准备")
+            delay(1500)
+            for (i in 0 until 100 step 2) {
+                showProgressHUD(i, "正在升级", i.toString())
+                delay(100)
+            }
+            showMessageHUD("升级完成", 3000L)
+            delay(3000)
+        }
+    }
+
     private fun setupViews() {
         adapter = SearchAdapter(DeviceItemListener {
-            didSelectHeater(it)
+            didSelectDevice(it)
         })
 
         val vmFactory = EmsDeviceViewModelProvider(deviceData)
@@ -85,6 +105,7 @@ class ScanFragment : BaseFragment(), SMEmsManagerDelegate {
         showLoadingHUD("Searching...")
         deviceData.clear()
         adapter.submitList(deviceData)
+        Timber.e("开始扫描")
         SMEmsManager.defaultManager.startScanEmsDevice(1.0, 0.0)
     }
 
@@ -105,15 +126,15 @@ class ScanFragment : BaseFragment(), SMEmsManagerDelegate {
         hideHUD()
     }
 
-    private fun didSelectHeater(heaterModel: SMEmsDeviceModel) {
+    private fun didSelectDevice(deviceModel: SMEmsDeviceModel) {
         SMEmsManager.defaultManager.stopScan()
-        Timber.i("didSelectDevice ${heaterModel.name}\nSN:${heaterModel.snCodeDisplay}")
+        Timber.i("didSelectDevice ${deviceModel.name}\nSN:${deviceModel.snCodeDisplay}")
         showLoadingHUD("Connecting...")
         Timber.e("开始连接设备")
         SMEmsManager.defaultManager.isEnableAutoReconnect = true
 //        testScanAndAutoReconnect = true
-        lastSN = heaterModel.snCode
-        SMEmsManager.defaultManager.connectDevice(heaterModel.device!!)
+        lastSN = deviceModel.snCode
+        SMEmsManager.defaultManager.connectDevice(deviceModel.device!!, deviceModel)
     }
 
     private fun gotoConnected() {
@@ -123,7 +144,9 @@ class ScanFragment : BaseFragment(), SMEmsManagerDelegate {
 
     override fun didDiscoverDevice(bleDevices: List<SMEmsDeviceModel>) {
         deviceData.clear()
-        deviceData.addAll(bleDevices)
+
+//        deviceData.addAll(bleDevices)
+        deviceData.addAll(bleDevices.filter { it.rssi > -55 })
         adapter.submitList(deviceData)
         binding.apply {
             if (bleDevices.size > 0) {
